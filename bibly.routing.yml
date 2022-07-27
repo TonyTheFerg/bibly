@@ -1,0 +1,10 @@
+bibly.settings:
+  path: '/admin/config/content/bibly'
+  defaults:
+    _form: '\Drupal\bibly\Form\BiblyAdminForm'
+    _title: 'bibly'
+    _description: 'Bible reference shortner settings'
+  requirements:
+    _permission: 'administer bibly'
+
+

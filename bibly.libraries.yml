@@ -1,0 +1,22 @@
+# bibly.libraries.yml
+bibly-theme:
+  version: 1.x
+  css:
+    theme:
+      css/bibly.min.css: {}
+
+bibly:
+  version: 1.x
+  js:
+    js/bibly.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+
+drbibly:
+  version: 1.x
+  js:
+    js/drbibly.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

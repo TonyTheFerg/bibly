@@ -1,0 +1,13 @@
+{
+  "name": "drupal/bibly",
+  "description": "Adds bible verse highlighting and links to the bible reader of users choice.",
+  "type": "drupal-module",
+  "authors": [
+    {
+      "name": "Carl Hinton",
+      "homepage": "https://carlhinton.com"
+    }
+  ],
+  "license": "GPL-2.0+",
+  "require": { }
+}

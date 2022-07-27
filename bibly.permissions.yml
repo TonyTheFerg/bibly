@@ -1,0 +1,4 @@
+administer bibly:
+  title: 'Administer bibly'
+  description: 'Administer bibly.'
+  restrict access: true

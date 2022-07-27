@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function bibly_preprocess_page(&$variables) {
+
+  $config = \Drupal::config('bibly.settings');
+
+  $link_version =  $config->get('bibly_linkVersion');
+  $popups =  $config->get('bibly_enablePopups');
+  $class_name =  $config->get('bibly_classname');
+  $start_nid =  $config->get('bibly_startNodeId');
+
+  $variables['#attached']['library'][] =  'bibly/bibly';
+  $variables['#attached']['library'][] =  'bibly/bibly-theme';
+
+  $variables['#attached']['drupalSettings']['bibly']['bibly']['startNodeId'] = $start_nid;
+  $variables['#attached']['drupalSettings']['bibly']['bibly']['enablePopups'] = ($popups  == 1) ? 'true' : 'false';
+  $variables['#attached']['drupalSettings']['bibly']['bibly']['popupVersion'] = $link_version;
+  $variables['#attached']['drupalSettings']['bibly']['bibly']['className'] = $class_name;
+
+  $variables['#attached']['library'][] =  'bibly/drbibly';
+
+}

@@ -1,0 +1,6 @@
+bibly.admin:
+  title: 'Bibly'
+  parent: system.admin_config_content
+  description: Configure the Bibly behavior
+  route_name: bibly.settings
+  weight: 100

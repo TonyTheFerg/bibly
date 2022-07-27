@@ -1,0 +1,5 @@
+name: Bibly
+type: module
+description: "Adds bible verse highlighting and links to the bible reader of users choice."
+package: bibly
+core_version_requirement: ^8.7.7 || ^9
